@@ -46,7 +46,7 @@ for z = 1:lenAng
     Ridge = zeros(300,300);
     for x = 1:300
         for y = 1:300
-           Ridge(x,y) = RidgePattern(x,y,angles(z)); 
+           Ridge(x,y) = RidgePattern(x,y,deg2rad(angles(z))); 
         end
     end
     figure;
